@@ -1,0 +1,177 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>採買homework - reMarkable 2 vs Fujitsu Quaderno A4 gen. 2 | JL</title>
+
+<link rel="shortcut icon" href="https://jasonlung.github.io/favicon.ico?v=1717461193810">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://jasonlung.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            JL
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            home
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            archives
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            tags
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1717461193810" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="Search" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    採買homework - reMarkable 2 vs Fujitsu Quaderno A4 gen. 2
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 04:34am Feb 25 2023  ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <p>TL;DR  不要買rM2</p>
+<ul>
+<li>它跟雲端(包括Google Drive, Microsoft OneDrive, Dropbox)的同步不是真同步，而是匯出/匯入的概念。</li>
+<li>比如說，從雲端下載一個PDF, 它是複製同一份PDF進rM2而不是和雲端同步，這是知識庫管理的大災難。</li>
+<li>如果在rM2上生成一個文件，存到雲端，rM2是把這個文件轉成PDF後上傳，上面的書寫內容變成PDF的一部分，&quot;可能&quot;無法變動了。
+<ul>
+<li>沒用其他apps比如PDF Expert上測試過，所以不確定。</li>
+<li>也不確定將來韌體updates會不會改掉這個機制。</li>
+</ul>
+</li>
+<li>結合上面兩點，如果在rM2上生成一個文件，在上面書寫，接著上傳(並被轉檔成PDF)到雲端, 這時再從雲端下載這個文件到rM2, 這時rM2就有兩份看上去一樣的文件，內容一樣，差別在於一份是rM2內部的檔案格式，所以還可以修改(比如用橡皮擦功能塗掉、或是用lasso功能圈起拖拉改變位置)原本書寫的內容，但下載下來的這份被轉成PDF的檔案，上面的書寫內容已經成為PDF的一部分，就沒辦法在rM2上做修改了。</li>
+<li>如果上傳epub到eM2, 檔案一樣先被轉成PDF再進到rM2, 而不是純粹的epub格式
+<ul>
+<li>這是否會造成用highlight工具划重點時，無法自動錨定文字內容，變成很平整的線條？</li>
+</ul>
+</li>
+</ul>
+<p>相較之下，Fujitsu Quaderno gen 2(FQ2)似乎是單純地處理PDF</p>
+<ul>
+<li>FQ2可以透過USB或Wi-Fi和電腦上的Quaderno desktop app同步</li>
+<li>一旦同步了，移動檔案到其他檔案夾必須透過Quaderno desktop app, 不能直接在FQ2上處理。</li>
+<li>有支援Google Drive，檔案位置不變的話就可以同步。</li>
+<li>手機也有Quaderno app, 這可以和Quaderno機器、電腦上的Quaderno desktop app、Google Drive同步嗎？</li>
+<li>據傳，Quaderno gen. 3會在2023年3月或6月正式發佈，黑白是240ppi, 彩色是4096色150ppi。</li>
+</ul>
+<p>Readmoo Ink Pro</p>
+<ul>
+<li>接上電腦似乎就是usb碟，管理上只需要單純地把檔案丟進機器或是從機器撈檔案回電腦就好。這個要再確定一下。</li>
+</ul>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://jasonlung.github.io/post/tou-guo-otg-chuan-zhao-pian-dao-google-pixel-3a-xl-de-google-photos/" class="post-title gt-a-link">
+                    透過OTG傳照片到Google Pixel 3a XL的Google Photos
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Cast a cold eye 
+on life, on death.
+Horseman, pass by!</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://jasonlung.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

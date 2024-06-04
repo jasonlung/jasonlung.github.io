@@ -1,0 +1,164 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>如何在蘋果裝置和 Kindle 之間看同一本書並同步筆記？ | JL</title>
+
+<link rel="shortcut icon" href="https://jasonlung.github.io/favicon.ico?v=1717461193810">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://jasonlung.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            JL
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            home
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            archives
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            tags
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1717461193810" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="Search" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    如何在蘋果裝置和 Kindle 之間看同一本書並同步筆記？
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 10:41am Oct 04 2022  ·
+                    </time>
+                    
+                        <a href="https://jasonlung.github.io/tag/HpIkxJHRJ/" class="post-tags">
+                            # calibre
+                        </a>
+                    
+                        <a href="https://jasonlung.github.io/tag/pN3a2kRVK/" class="post-tags">
+                            # kindle
+                        </a>
+                    
+                        <a href="https://jasonlung.github.io/tag/9DfJtUnKb/" class="post-tags">
+                            # ebooks
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>在蘋果裝置上看書，最直覺的方式是用內建的 Books app, 但假如你有 Kindle, 想在蘋果裝置和 Kindle 之間看同一本書並同步筆記，可以考慮把書傳到 Kindle, 會被歸類為 Digital Content &gt; Docs</p>
+<h2 id="send-to-kindle-stk">Send-to-Kindle (STK)</h2>
+<h3 id="stk-for-mac">STK for Mac</h3>
+<p>把書傳到 Kindle, 我們一般是用 STK, 截至 10/05/2022, Mac 版 STK 無法寄 ePub, 會在軟體端就被擋。不過 Kindle Scribe 發佈時，亞馬遜有說 2022 年底會上線寄 ePub 的服務，到時再看吧。</p>
+<h3 id="用-calibre-寄書">用 Calibre 寄書</h3>
+<p>至於用 Calibre 寄 ePub 到 Kindle, 即使我已經把 Calibre 端的寄件人 email 放進 Kindle 接收 STK 的白名單了，但還是會收到驗證信，驗證完才會收到檔案。網上說法是 STK 本身的設計問題導致隱私漏洞，似乎要換個完全不會透露出個人資訊的 email 來規避，但官方並沒有給個明確說法。</p>
+<p>另外，不管 Calibre 這端的書名是中文還英文，STK 後檔案名都會被改成無意義的亂數，也無法透過 Kindle 改檔名，於是得先把書下載下來，才能憑封面判斷是哪本書，挺麻煩的。Reddit 有人說是亞馬遜最近才搞出來的問題，不知道之後會不會修復。</p>
+<h3 id="折衷辦法用手機的-kindle-app">折衷辦法：用手機的 Kindle app</h3>
+<p>手機的 Kindle app 內建上傳到 Kindle &gt; Docs 的功能，如果要避免上面提到的問題（無法寄 ePub, 亂數書名、無謂的驗證等），折衷辦法是先把 Calibre 裡的書上傳到雲端，再用手機的 Kindle app 打開這本書，書就能避開上述問題，順利到 Kindle &gt; Docs.</p>
+<h3 id="後記">後記</h3>
+<p>近來為了攜帶性和碎片化閱讀，幾乎都用 iPhone Books app 閱讀，很少用 Kindle 閱讀器了，這次研究這些是為了夜讀時不容易犯睏以及護眼，在外閱讀頂多從 Apple Books app 搬到 Kindle app, 夜讀時仍然用 Kindle 閱讀器，問題不大。不過這串研究下來，Kindle 生態圈還是挺不直覺的，可能要等年底上傳 ePub 的功能上線了再看有沒有改善。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">Cast a cold eye 
+on life, on death.
+Horseman, pass by!</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://jasonlung.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

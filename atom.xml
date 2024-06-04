@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://jasonlung.github.io</id>
+    <title>JL</title>
+    <updated>2024-06-04T00:33:17.640Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://jasonlung.github.io"/>
+    <link rel="self" href="https://jasonlung.github.io/atom.xml"/>
+    <subtitle>Cast a cold eye 
+on life, on death.
+Horseman, pass by!</subtitle>
+    <logo>https://jasonlung.github.io/images/avatar.png</logo>
+    <icon>https://jasonlung.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, JL</rights>
+    <entry>
+        <title type="html"><![CDATA[用calibre內建send-to-kindle導致中文書名被轉成pinyin的解法]]></title>
+        <id>https://jasonlung.github.io/post/yong-calibre-nei-jian-send-to-kindle-dao-zhi-shu-ming-bei-zhuan-cheng-pinyin-de-jie-fa/</id>
+        <link href="https://jasonlung.github.io/post/yong-calibre-nei-jian-send-to-kindle-dao-zhi-shu-ming-bei-zhuan-cheng-pinyin-de-jie-fa/">
+        </link>
+        <updated>2024-05-30T04:34:06.000Z</updated>
+        <content type="html"><![CDATA[<p>問題：</p>
+<ul>
+<li>如果用電腦上的calibre內建的send-to-kindle把書發到kindle, 書名和作者名會被calibre改成pinyin顯示。</li>
+</ul>
+<p>目標：</p>
+<ul>
+<li>把書名和作者名從pinyin改回中文顯示</li>
+<li>用手機連calibre content server，並把書發到ios kindle或ios books閱讀。</li>
+</ul>
+<ol>
+<li>先在電腦上設定好calibre content server<br>
+(有空再寫如何設定。備忘：關鍵是在wifi router上設定連線通道。記得打開電腦時讓calibre自動啟動以及calibre啟動後自動啟動content server.）</li>
+<li>透過ios calibre sync連上calibre content server後，必須先把書下載到calibre sync，才能透過calibre sync的send to kindle功能把書發給kindle, 或用calibre sync內的READ功能(相當於share)把書加進ios books. 下載到calibre sync的書，書名和作者名是以pinyin顯示。</li>
+<li>用calibre sync把書send to kindle時，會跳出ios kindle, 並讓你在送出前手動設定書名和作者名，如此就能把被calibre轉為pinyin的書名手動改回中文。</li>
+<li>如果是用calibre sync的READ功能把書傳到ios books, 會直接顯示中文書名和作者名，不需要額外步驟。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[採買homework - reMarkable 2 vs Fujitsu Quaderno A4 gen. 2]]></title>
+        <id>https://jasonlung.github.io/post/cai-mai-homework-remarkable-2-vs-fujitsu-quaderno-a4-gen-2/</id>
+        <link href="https://jasonlung.github.io/post/cai-mai-homework-remarkable-2-vs-fujitsu-quaderno-a4-gen-2/">
+        </link>
+        <updated>2023-02-25T09:34:29.000Z</updated>
+        <content type="html"><![CDATA[<p>TL;DR  不要買rM2</p>
+<ul>
+<li>它跟雲端(包括Google Drive, Microsoft OneDrive, Dropbox)的同步不是真同步，而是匯出/匯入的概念。</li>
+<li>比如說，從雲端下載一個PDF, 它是複製同一份PDF進rM2而不是和雲端同步，這是知識庫管理的大災難。</li>
+<li>如果在rM2上生成一個文件，存到雲端，rM2是把這個文件轉成PDF後上傳，上面的書寫內容變成PDF的一部分，&quot;可能&quot;無法變動了。
+<ul>
+<li>沒用其他apps比如PDF Expert上測試過，所以不確定。</li>
+<li>也不確定將來韌體updates會不會改掉這個機制。</li>
+</ul>
+</li>
+<li>結合上面兩點，如果在rM2上生成一個文件，在上面書寫，接著上傳(並被轉檔成PDF)到雲端, 這時再從雲端下載這個文件到rM2, 這時rM2就有兩份看上去一樣的文件，內容一樣，差別在於一份是rM2內部的檔案格式，所以還可以修改(比如用橡皮擦功能塗掉、或是用lasso功能圈起拖拉改變位置)原本書寫的內容，但下載下來的這份被轉成PDF的檔案，上面的書寫內容已經成為PDF的一部分，就沒辦法在rM2上做修改了。</li>
+<li>如果上傳epub到eM2, 檔案一樣先被轉成PDF再進到rM2, 而不是純粹的epub格式
+<ul>
+<li>這是否會造成用highlight工具划重點時，無法自動錨定文字內容，變成很平整的線條？</li>
+</ul>
+</li>
+</ul>
+<p>相較之下，Fujitsu Quaderno gen 2(FQ2)似乎是單純地處理PDF</p>
+<ul>
+<li>FQ2可以透過USB或Wi-Fi和電腦上的Quaderno desktop app同步</li>
+<li>一旦同步了，移動檔案到其他檔案夾必須透過Quaderno desktop app, 不能直接在FQ2上處理。</li>
+<li>有支援Google Drive，檔案位置不變的話就可以同步。</li>
+<li>手機也有Quaderno app, 這可以和Quaderno機器、電腦上的Quaderno desktop app、Google Drive同步嗎？</li>
+<li>據傳，Quaderno gen. 3會在2023年3月或6月正式發佈，黑白是240ppi, 彩色是4096色150ppi。</li>
+</ul>
+<p>Readmoo Ink Pro</p>
+<ul>
+<li>接上電腦似乎就是usb碟，管理上只需要單純地把檔案丟進機器或是從機器撈檔案回電腦就好。這個要再確定一下。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[透過OTG傳照片到Google Pixel 3a XL的Google Photos]]></title>
+        <id>https://jasonlung.github.io/post/tou-guo-otg-chuan-zhao-pian-dao-google-pixel-3a-xl-de-google-photos/</id>
+        <link href="https://jasonlung.github.io/post/tou-guo-otg-chuan-zhao-pian-dao-google-pixel-3a-xl-de-google-photos/">
+        </link>
+        <updated>2023-02-16T07:04:14.000Z</updated>
+        <content type="html"><![CDATA[<p>分幾種情境來看吧</p>
+<ol>
+<li>Fuji X-S10透過OTG線接Pixel 3a, 相機開機，去Pixel的notification center點擊通知允許操作，往後相機接上Pixel 3a後就會自動跳到Google Photos. 這個模式下，記憶卡可吃FAT32/exFAT格式。</li>
+<li>透過OTG讀卡機接Pixel, 去Pixel的notification center點擊對應的通知，其中一個通知會要求格式化記憶卡。我是用usb-c hub上的讀卡機，不確定其他單一功能的OTG讀卡機會不會遇到一樣情況。</li>
+</ol>
+<p>總之，記住：</p>
+<ol>
+<li>必須是OTG線(好像是叫做被動線)</li>
+<li>Android 13開始可以吃exFAT格式</li>
+<li>一定要去通知中心點選對應的訊息允許操作。</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我為什麼開始逼自己盡量讀英文書？]]></title>
+        <id>https://jasonlung.github.io/post/wei-shi-mo-wo-kai-shi-bi-zi-ji-zhi-du-ying-wen-shu/</id>
+        <link href="https://jasonlung.github.io/post/wei-shi-mo-wo-kai-shi-bi-zi-ji-zhi-du-ying-wen-shu/">
+        </link>
+        <updated>2022-10-07T11:31:02.000Z</updated>
+        <content type="html"><![CDATA[<p>雖然英文程度不算差，托福輕鬆 110, 但一直挺排斥讀英文書。這兩年開始接觸投資書籍，如果不是以中文寫成，我基本上都從繁中、簡中譯本開始讀。投資是門以賺錢為目標的專業，翻譯是門不怎麼賺錢的專業，因此要有人同時具備投資專業、翻譯品質，並且願意花時間翻譯，並不容易。</p>
+<p>王國樑身為經濟學教授，卻說他求學時最頭痛的科目是經濟學，為了攻克這門學問，他會同時把許多本經濟學教科書攤開在書桌上互相參照。我在閱讀投資書籍時，也常把同一作品的繁中、簡中、英文版，可能是電子書、可能是紙本書、可能是自炊的電子書，同時&quot;攤開&quot;在面前。</p>
+<p>互相參照的過程中，就發現了幾件事：</p>
+<h3 id="中譯版問題不少">中譯版問題不少</h3>
+<p>首先，中譯版問題不少。繁中投資經典大多出自寰宇出版社，譯者總是那幾位，並不是說翻譯得好或不好，而是沒太多選擇。簡中譯本的選擇較多，我會先去豆瓣看評價，再決定在亞馬遜中國買哪幾本電子書。即便如此，篩選出的也多是像丁聖元這樣有口碑的譯者，一樣常遇到翻得不通順、甚至不清不楚的情況，必須找其他版本做比較，包括找用英文寫成的原作。比如《股票作手回憶錄》，我一共買了方舟文化丁聖元版本、寰宇出版社齊克用版本、海南出版社真如版本、原文版本互相參照，才總算把第 21 章後半段 Livermore 講述他怎麼作市的觀點給搞清楚，如果只看評分和評價數量最高的丁聖元版本，我那段是搞不懂的。</p>
+<p>(06.03.2024補充：1. 亞馬遜中國已收掉電子書業務；2. 簡中受好評的譯者還有另外兩位，姓名一時之間想不起來，之後再補充。)</p>
+<h3 id="不知道簡中譯本刪節了什麼">不知道簡中譯本刪節了什麼</h3>
+<p>其次，是我在讀《李光耀觀天下》時發現的。我有天下文化的繁中版紙本書，最近跨國移動時有感於紙本書攜帶不易，於是買了簡中版電子書。我的理解是這本書以英文寫成，但同時提供明確的中文版本給到華語世界，估計是新加坡半官方性質對世界表達立場的書，用字不能不精準，不然發生類似美國和中國對 One-China Policy 中 &quot;acknowledge&quot; 一字認知不同的情況，對新加坡這種小國來說，不是一件好事。因此，繁中版和簡中版只差在書寫文字，內容一模一樣對吧？</p>
+<p>錯！</p>
+<p>李光耀這人直率，原作中多有直接點名中國共產黨及其領導人的內容，這些在繁中版本中都完整保留了，但簡中版本全被刪節。兩相對照後，簡中版本盡量做到了不失原意，但如果今天主角不是李光耀，還能獲得相同尊重嗎？我不打算把篩選、判斷的權力毫無保留地交給別人，這是我漸漸遠離簡中書籍的開始。</p>
+<p>與此同時，我也開始思考閱讀譯本的陷阱。如果翻譯不順導致理解困難，或許還能透過參照多個版本來解決，但假如翻譯看似順暢但實際上和作者原意完全相反呢？我能意識到有問題嗎？假如像簡中版《李光耀觀天下》這樣，把內容拿掉，我能意識到有問題嗎？甚至，假如像給電腦系統植入木馬一樣，給所謂的“翻譯書&quot;植入為當權者服務的思維木馬，我對原著的理解會不會反而被誤導？這是我傾向於讀原文是英文的作品的開始。而因為我只會英文一門外語，如果原文不是英文，尤其不是專業書籍，那麼英譯本或中譯本或許差別不大；如果是東亞文化圈的作品，或許讀中譯版還更適合。但假如是專業書籍，由於現代專業知識體系大量建立在歐美所建立的框架中，因此理智上我會更傾向於讀英譯本，但就還需要打破目前讀中文的慣性。</p>
+<h3 id="總結">總結</h3>
+<p>最難但最重要的一件事是維持認知系統的正確性，而這必須建立在資訊來源的可信度是可被驗證的，不然你連你接收到的資訊正不正確都判斷不出來。我閱讀專業書籍是為了學習知識，閱讀中譯本的原意是為了用較少的時間學習知識，但假如因為翻譯而必須花更多的時間參照其他版本，甚至被錯誤的翻譯誤導而對專業知識的理解有誤，那反而得不償失。就算只談經濟效益，我只需要買一本英文電子書，不需要另外折騰中譯本電子書甚至紙本書，那也是很舒服的事。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome extension - Reader View]]></title>
+        <id>https://jasonlung.github.io/post/jie-shao-chrome-reader-view-extension/</id>
+        <link href="https://jasonlung.github.io/post/jie-shao-chrome-reader-view-extension/">
+        </link>
+        <updated>2022-10-06T05:54:33.000Z</updated>
+        <content type="html"><![CDATA[<p>最近在找 Chrome 的 reader mode extension, 安裝並試用了幾個評價較多也較高分的，最後留下<br>
+<a href="https://chrome.google.com/webstore/detail/reader-view/ecabifbgmdmgdllomnfinbmaellmclnh">Reader View</a>，甚至覺得它比其他 extensions 好太多了。</p>
+<h2 id="特點">特點</h2>
+<ol>
+<li>雖然內建不少可以調整的參數，要手動修改 CSS 也沒問題，但預設模式已經很適合閱讀，不輸 Evernote Web Clipper 當閱讀模式使用的效果。</li>
+<li>內建簡易的文書編輯器和便利貼，進入閱讀模式後，可以直接修改文章或劃記重點，並在文章各個位置貼上便利貼。跳出閱讀模式再重新進入，修改過的內容會消失、恢復原文內容，但即使重啟 Chrome 再進入閱讀模式，便利貼還是會在。</li>
+<li>可以把閱讀模式中的內容和格式儲存成 HTML 和 PDF, 包括便利貼，前者的話，便利貼也就是一段語法，後者的話，如果便利貼在閱讀模式中是貼在文字上，存成 PDF 時會蓋掉文字，如果放文章兩側的 margin 再把 PDF 存成 A4 或 US Letter 大小，則很可能不會把便利貼存進去，但假如把 PDF 存成 A2 大小，文字在整個畫面中的比例會變小，兩旁的 margin 就出來了，貼在這的便利貼也就能顯現，特別像是讀 paper 做筆記。</li>
+</ol>
+<h2 id="後記">後記</h2>
+<p>Reader View 是免費的，不要對筆記或劃重點之類的附加功能有太高的期待，如果純粹使用閱讀模式，並把文章存成 PDF 收藏，這個 extension 做得挺好。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello World!]]></title>
+        <id>https://jasonlung.github.io/post/hello-world/</id>
+        <link href="https://jasonlung.github.io/post/hello-world/">
+        </link>
+        <updated>2022-10-04T20:13:56.000Z</updated>
+        <content type="html"><![CDATA[<p>Greetings from Jason Lung using Gridea and Github Pages.<br>
+Have a nice day.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何在蘋果裝置和 Kindle 之間看同一本書並同步筆記？]]></title>
+        <id>https://jasonlung.github.io/post/ru-he-zai-pin-guo-zhuang-zhi-he-kindle-zhi-jian-kan-tong-yi-ben-shu-bing-tong-bu-bi-ji/</id>
+        <link href="https://jasonlung.github.io/post/ru-he-zai-pin-guo-zhuang-zhi-he-kindle-zhi-jian-kan-tong-yi-ben-shu-bing-tong-bu-bi-ji/">
+        </link>
+        <updated>2022-10-04T14:41:05.000Z</updated>
+        <content type="html"><![CDATA[<p>在蘋果裝置上看書，最直覺的方式是用內建的 Books app, 但假如你有 Kindle, 想在蘋果裝置和 Kindle 之間看同一本書並同步筆記，可以考慮把書傳到 Kindle, 會被歸類為 Digital Content &gt; Docs</p>
+<h2 id="send-to-kindle-stk">Send-to-Kindle (STK)</h2>
+<h3 id="stk-for-mac">STK for Mac</h3>
+<p>把書傳到 Kindle, 我們一般是用 STK, 截至 10/05/2022, Mac 版 STK 無法寄 ePub, 會在軟體端就被擋。不過 Kindle Scribe 發佈時，亞馬遜有說 2022 年底會上線寄 ePub 的服務，到時再看吧。</p>
+<h3 id="用-calibre-寄書">用 Calibre 寄書</h3>
+<p>至於用 Calibre 寄 ePub 到 Kindle, 即使我已經把 Calibre 端的寄件人 email 放進 Kindle 接收 STK 的白名單了，但還是會收到驗證信，驗證完才會收到檔案。網上說法是 STK 本身的設計問題導致隱私漏洞，似乎要換個完全不會透露出個人資訊的 email 來規避，但官方並沒有給個明確說法。</p>
+<p>另外，不管 Calibre 這端的書名是中文還英文，STK 後檔案名都會被改成無意義的亂數，也無法透過 Kindle 改檔名，於是得先把書下載下來，才能憑封面判斷是哪本書，挺麻煩的。Reddit 有人說是亞馬遜最近才搞出來的問題，不知道之後會不會修復。</p>
+<h3 id="折衷辦法用手機的-kindle-app">折衷辦法：用手機的 Kindle app</h3>
+<p>手機的 Kindle app 內建上傳到 Kindle &gt; Docs 的功能，如果要避免上面提到的問題（無法寄 ePub, 亂數書名、無謂的驗證等），折衷辦法是先把 Calibre 裡的書上傳到雲端，再用手機的 Kindle app 打開這本書，書就能避開上述問題，順利到 Kindle &gt; Docs.</p>
+<h3 id="後記">後記</h3>
+<p>近來為了攜帶性和碎片化閱讀，幾乎都用 iPhone Books app 閱讀，很少用 Kindle 閱讀器了，這次研究這些是為了夜讀時不容易犯睏以及護眼，在外閱讀頂多從 Apple Books app 搬到 Kindle app, 夜讀時仍然用 Kindle 閱讀器，問題不大。不過這串研究下來，Kindle 生態圈還是挺不直覺的，可能要等年底上傳 ePub 的功能上線了再看有沒有改善。</p>
+]]></content>
+    </entry>
+</feed>
